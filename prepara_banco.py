@@ -42,21 +42,21 @@ for user in cursor.fetchall():
     print(user[1])
 
 # inserindo jogos
-cursor.executemany(
-      'INSERT INTO jogoteca.jogo (nome, categoria, console) VALUES (%s, %s, %s)',
-      [
-            ('God of War 4', 'Ação', 'PS4'),
-            ('NBA 2k18', 'Esporte', 'Xbox One'),
-            ('Rayman Legends', 'Indie', 'PS4'),
-            ('Super Mario RPG', 'RPG', 'SNES'),
-            ('Super Mario Kart', 'Corrida', 'SNES'),
-            ('Fire Emblem Echoes', 'Estrategia', '3DS'),
-      ])
+# cursor.executemany(
+#       'INSERT INTO jogoteca.jogo (nome, categoria, console) VALUES (%s, %s, %s)',
+#       [
+#             ('God of War 4', 'Ação', 'PS4'),
+#             ('NBA 2k18', 'Esporte', 'Xbox One'),
+#             ('Rayman Legends', 'Indie', 'PS4'),
+#             ('Super Mario RPG', 'RPG', 'SNES'),
+#             ('Super Mario Kart', 'Corrida', 'SNES'),
+#             ('Fire Emblem Echoes', 'Estrategia', '3DS'),
+#       ])
 
-cursor.execute('select * from jogoteca.jogo')
-print(' -------------  Jogos:  -------------')
-for jogo in cursor.fetchall():
-    print(jogo[1])
+# cursor.execute('select * from jogoteca.jogo')
+# print(' -------------  Jogos:  -------------')
+# for jogo in cursor.fetchall():
+#     print(jogo[1])
 
 # commitando senão nada tem efeito
 conn.commit()
