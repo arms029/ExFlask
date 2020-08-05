@@ -1,0 +1,3 @@
+- Instale todas as bibliotecas necessárias para o projeto
+- Rodar "prepara_banco.py" para popular o Banco de dados
+- Rodar "jogoteca.py" para iniciar o servidor
